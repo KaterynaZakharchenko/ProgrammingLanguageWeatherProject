@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App - Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="loginstyle.css">
+    <script defer src="login.js"></script>
+</head>
+<body class="body">
+  <div class="main">
+    <div id="tabs">
+        <p id="lt" class="tabs active" onclick="loginTabFun()">Log in</p>
+        <p id="rt" class="tabs" onclick="regTabFun()">Register</p>
+        <div id="clear"></div>
+    </div>
+
+    <div id="cont">
+        <div id="login" class="comm active">
+            <h3>Sign in</h3>
+            <input id="se" type="email" class="input-field" placeholder="Email" required/>
+            <input id="sp" type="password" class="input-field" placeholder="Password" required/>
+            <button class="button" onclick="login()">Login</button>
+            <p onclick="forTabFun()">Forgot Password?</p>
+        </div>
+
+        <div id="register" class="comm">
+            <h3>Register</h3>
+            <input id="re" type="email" class="input-field" placeholder="Email" required/>
+            <input id="rp" type="password" class="input-field" placeholder="Password" required/>
+            <input id="rrp" type="password" class="input-field" placeholder="Re-enter Password" required/>
+            <button class="button" onclick="register()">Register</button>
+        </div>
+
+        <div id="forgot" class="comm">
+            <h3>Forgot Password</h3>
+            <input id="fe" type="email" class="input-field" placeholder="Email" required/>
+            <button class="button" onclick="forgot()">Submit</button>
+        </div>
+    </div>
+  </div>
+</body>
+</html>

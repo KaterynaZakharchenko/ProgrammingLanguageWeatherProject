@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="login.js"></script>
+    <script defer src="auth.js"></script>
+    <script defer src="init.js"></script>
+</head>
+<body class="body">
+  <!-- Logout Button -->
+  <button class="logout-button" onclick="logout()">Logout</button>
+  <div class="main">
+    <div class="search">
+      <input type="text" class="searchbar" placeholder="Search">
+      <button class="button">Look</button>
+    </div>
+    <div class="weather">
+      <h2 class="city"></h2>
+      <h1 class="temp"></h1>
+      <img class="img">
+      <div class="decr el"></div>
+      <div class="humidity el"></div>
+      <div class="wind el"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    function logout() {
+        window.location.href = "login.html"; // Redirect to login page
+    }
+  </script>
+</body>
+</html>
+
+
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="login.js"></script>
+    <script defer src="auth.js"></script>
+    <script defer src="init.js"></script>
+</head>
+<body class="body">
+  <div class="main">
+    <div class="search">
+      <input type="text" class="searchbar" placeholder="Search">
+      <button class="button">Look</button>
+    </div>
+    <div class="weather">
+      <h2 class="city"></h2>
+      <h1 class="temp"></h1>
+      <img class="img">
+      <div class="decr el"></div>
+      <div class="humidity el"></div>
+      <div class="wind el"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
